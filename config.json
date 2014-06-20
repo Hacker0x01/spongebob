@@ -1,0 +1,32 @@
+{
+  "spongebob" :
+    {
+      "savedirectory"	: "/home/spongebob/data",
+      "savepattern"	: "nmaprun-%Y-%m-%dT%H:%M%Z.xml",
+      "cachefile"	: "networks.json",
+      "emailfrom"	: "spongebob@localhost",
+      "emailto"		: "spongebob@localhost",
+      "errorsto"	: "spongebob@localhost",
+      "emailserver"	: "localhost"
+  },
+  "nmap_profile" :
+    {
+      "nmap_bin" : "/usr/bin/sudo /usr/local/bin/nmap",    
+      "nmap_args" : "-T4 -sS -sV -oX -",
+      "min_nmap_ver"  : 6.4
+    },
+  "target_networks" : 
+    {
+      "192.0.2.0/24" : "TEST-NET-1",
+      "198.51.100.0/24" : "TEST-NET-2",
+      "203.0.113.0/24" : "TEST-NET-3"
+    },
+  "aws_credentials" :
+    {
+      "Test account" :
+        {
+          "aws_access_key_id": "fake_key_id",
+          "aws_secret_access_key": "fake_secret_access_key"
+        }
+    }
+}
